@@ -69,6 +69,7 @@ function newArr(arr) {
 	return Array.prototype.slice.call(arr, 0)
 }
 
+// It assumes that the callback is the last argument.
 function thunkify(callbackFn) {
 	
 	var userFnPointer = null
